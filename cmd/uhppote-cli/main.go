@@ -44,6 +44,7 @@ var cli = []commands.Command{
 	&commands.GetEventIndexCmd,
 	&commands.SetEventIndexCmd,
 	&commands.RecordSpecialEventsCmd,
+	&commands.SetPCControlCmd,
 	&commands.OpenDoorCmd,
 	&commands.ListenCmd,
 }

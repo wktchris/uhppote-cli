@@ -79,6 +79,7 @@ help: build
 	$(CLI) help
 	$(CLI) help get-devices
 	$(CLI) help record-special-events
+	$(CLI) help set-pc-control
 
 version: build
 	$(CLI) version
@@ -155,6 +156,11 @@ set-event-index: build
 
 record-special-events: build
 	$(CLI) $(DEBUG) record-special-events $(SERIALNO) true
+
+set-pc-control: build
+#	$(CLI) $(DEBUG) set-pc-control $(SERIALNO) true
+	$(CLI) $(DEBUG) set-pc-control 423187757 true
+#	$(CLI) $(DEBUG) set-pc-control 423187757 false
 
 open: build
 	$(CLI) $(DEBUG) open $(SERIALNO) 1

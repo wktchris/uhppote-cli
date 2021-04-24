@@ -43,9 +43,9 @@ func (c *RecordSpecialEvents) Execute(ctx Context) error {
 
 	if !succeeded {
 		if enable {
-			return fmt.Errorf("Failed enable 'record special events' on %v", deviceID)
+			return fmt.Errorf("Failed enable 'record special events' for %v", deviceID)
 		} else {
-			return fmt.Errorf("Failed disable 'record special events' on %v", deviceID)
+			return fmt.Errorf("Failed disable 'record special events' for %v", deviceID)
 		}
 	}
 
@@ -66,7 +66,7 @@ func (c *RecordSpecialEvents) Description() string {
 
 // Returns the 'record-special-events' command parameters for the CLI interface.
 func (c *RecordSpecialEvents) Usage() string {
-	return "<serial number> <enabled>"
+	return "<serial number> <enable>"
 }
 
 // Outputs the 'record-special-events' command help for the CLI interface.
