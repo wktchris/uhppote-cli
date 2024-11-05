@@ -10,7 +10,7 @@ var GetEventCmd = GetEvent{}
 type GetEvent struct {
 }
 
-const ROLLOVER = 100000
+const ROLLOVER = 300000
 
 func (c *GetEvent) Execute(ctx Context) error {
 	serialNumber, err := getSerialNumber(ctx)

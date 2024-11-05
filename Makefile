@@ -24,7 +24,7 @@ format:
 	go fmt ./...
 
 build: format
-	mkdir -p bin
+	mkdir bin
 	go build -o bin ./...
 
 test: build
